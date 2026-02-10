@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ortho & Gynae CARE</title>
+
+    <link rel="icon" href="favicon.png">
+    <meta name="google" content="notranslate">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <img src="Assets/Images/logo.png" alt="The Ortho & Gynae Clinic Logo" class="clinic-logo">
+    <h1>THE ORTHO & GYNAE CARE</h1>
+    <p class="tagline">Compassionate care — Gynaecology & Orthopaedics</p>
+</header>
+
+<!-- MAIN -->
+<main class="container">
+
+    <section class="departments">
+
+        <!-- ORTHO -->
+        <article class="card ortho">
+            <h2>Orthopaedics</h2>
+            <div class="section-divider"></div>
+
+            <div class="doctor-info">
+                <p class="doctor-name">Dr. CHAYAN KUMAR PAL</p>
+                <p class="doctor-designation">
+                    MBBS (Hons), MS (Orthopaedics), DNB (New Delhi)<br>
+                    Consultant Orthopaedic Surgeon<br>
+                    Ex-Midnapore Medical College & Hospital<br>
+                    Attach-Jhargram Medical College<br>
+                    Reg No: 84143
+                </p>
+            </div>
+
+            <h3>Treatments</h3>
+            <ul>
+                <li>Fracture & Trauma Management</li>
+                <li>Joint Pain & Arthritis Treatment</li>
+                <li>Back Pain & Spine Care</li>
+                <li>Sports Injury Management</li>
+                <li>Physiotherapy & Rehabilitation Guidance</li>
+            </ul>
+
+            <h3>Clinic Hours</h3>
+            <table class="clinic-hours-table ortho-table">
+                <tr><th>Day</th><th>Morning</th><th>Evening</th></tr>
+                <tr><td>Sunday</td><td>8:00 AM – 12:00 PM</td><td>—</td></tr>
+                <tr><td>Monday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Tuesday</td><td colspan="2" class="closed">Closed</td></tr>
+                <tr><td>Wednesday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Thursday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Friday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Saturday</td><td>8:00 AM – 12:00 PM</td><td>—</td></tr>
+            </table>
+
+            <button class="section-book-btn ortho-btn"
+                    onclick="openBooking('919749701817','ortho')">
+                Book Orthopaedic Appointment
+            </button>
+        </article>
+
+        <!-- GYNAE -->
+        <article class="card gynae">
+            <h2>Gynaecology</h2>
+            <div class="section-divider"></div>
+
+            <div class="doctor-info">
+                <p class="doctor-name">Dr. N. MADHURI</p>
+                <p class="doctor-designation">
+                    MBBS, MS (Obstetrics & Gynaecology)<br>
+                    Consultant Gynaecologist & Obstetrician<br>
+                    High-Risk Pregnancy & Infertility Specialist<br>
+                    Ex-Medinipur Medical College & Hospital<br>
+                    Attach-Jhargram Medical College,
+                    Reg No: 88749
+                </p>
+            </div>
+
+            <h3>Treatments</h3>
+            <ul>
+                <li>Pregnancy & Normal / Caesarean Delivery</li>
+                <li>High-Risk Pregnancy Management</li>
+                <li>Infertility Evaluation & Treatment</li>
+                <li>Laparoscopic Gynaecological Surgery</li>
+                <li>Menstrual Disorders, PCOD</li>
+                <li>Menopause & Adolescent Gynaec Care</li>
+            </ul>
+
+            <h3>Clinic Hours</h3>
+            <table class="clinic-hours-table gynae-table">
+                <tr><th>Day</th><th>Morning</th><th>Evening</th></tr>
+                <tr><td>Sunday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Monday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Tuesday</td><td colspan="2" class="closed">Closed</td></tr>
+                <tr><td>Wednesday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Thursday</td><td>—</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Friday</td><td>8:00 AM – 12:00 PM</td><td>5:00 PM – 7:00 PM</td></tr>
+                <tr><td>Saturday</td><td>8:00 AM – 12:00 PM</td><td>—</td></tr>
+            </table>
+
+            <button class="section-book-btn gynae-btn"
+                    onclick="openBooking('919749701817','gynae')">
+                Book Gynaecology Appointment
+            </button>
+        </article>
+
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location-section">
+        <h2>Clinic Location</h2>
+        <p>Shivam Nursing Home Lane, Midnapore, West Bengal 721101</p>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.142249379208!2d87.31786797507311!3d22.423671179598017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d5bda53af6af7%3A0x27a0d8248021da0c!2sTHE%20ORTHO%20%26%20GYNAE%20CARE!5e0!3m2!1sen!2sin!4v1770736984138!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+        </div>
+
+        <div class="location-contact">
+            <p><i class="fa-solid fa-location-dot"></i> Midnapore, West Bengal</p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+919749701817">+91 9749701817</a>
+                &nbsp; | &nbsp;
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:theorthogynaeclinic32@gmail.com">
+                    theorthogynaeclinic32@gmail.com
+                </a>
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="booking-modal hidden">
+    <div class="booking-box">
+        <h3>Book Appointment</h3>
+        <p>Please choose how you want to book</p>
+
+        <a id="callLink" class="booking-option call">📞 Book via Call</a>
+        <a id="whatsappLink" class="booking-option whatsapp" target="https://wa.me/message/XUQDK2BJXAP3O1?src=qr">
+            💬 Book via WhatsApp
+        </a>
+
+        <button class="close-btn" onclick="closeBooking()">Cancel</button>
+    </div>
+</div>
+
+<!-- GOOGLE TRANSLATE (HIDDEN) -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<!-- FLOATING BUTTONS -->
+
+<button class="translate-float" onclick="translateToBengali()">🌐 বাংলা</button>
+
+<script src="script.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

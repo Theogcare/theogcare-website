@@ -1,0 +1,158 @@
+:root{
+  --ortho-blue:#1f78b4;
+  --gynae-pink:#e91e63;
+  --bg:#f7f9fb;
+  --card:#fff;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui,Arial;
+  background:var(--bg);
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(90deg,var(--ortho-blue),#4aa3df);
+  color:#fff;
+  text-align:center;
+  padding:1.4rem;
+}
+
+.clinic-logo{max-width:240px}
+
+/* LAYOUT */
+.container{max-width:1100px;margin:2.5rem auto;padding:0 1rem}
+.departments{display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem}
+
+/* CARDS */
+.card{
+  background:var(--card);
+  padding:1.4rem;
+  border-radius:14px;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+  display:flex;
+  flex-direction:column;
+}
+
+.card.ortho{border-left:6px solid var(--ortho-blue)}
+.card.gynae{border-left:6px solid var(--gynae-pink)}
+
+.section-divider{
+  height:2px;width:70px;margin:.4rem 0 1rem;
+  background:linear-gradient(to right,var(--ortho-blue),var(--gynae-pink))
+}
+/* ================= DOCTOR INFO FADE BOX ================= */
+
+.doctor-info{
+  padding:1rem 1.1rem;
+  border-radius:12px;
+  margin:1rem 0 1.4rem;
+}
+
+/* Ortho fade box */
+.card.ortho .doctor-info{
+  background:linear-gradient(
+    135deg,
+    rgba(31,120,180,0.12),
+    rgba(31,120,180,0.04)
+  );
+  border-left:4px solid var(--ortho-blue);
+}
+
+/* Gynae fade box */
+.card.gynae .doctor-info{
+  background:linear-gradient(
+    135deg,
+    rgba(233,30,99,0.12),
+    rgba(233,30,99,0.04)
+  );
+  border-left:4px solid var(--gynae-pink);
+}
+
+/* Doctor name */
+.doctor-name{
+  margin:0 0 .35rem;
+  font-weight:700;
+  font-size:1rem;
+}
+
+/* Doctor designation */
+.doctor-designation{
+  margin:0;
+  font-size:.9rem;
+  line-height:1.5;
+  color:#444;
+}
+
+
+/* TABLE */
+.clinic-hours-table{width:100%;border-collapse:collapse}
+.clinic-hours-table th,.clinic-hours-table td{padding:.6rem;border-top:1px solid #eee}
+.closed{text-align:center;color:var(--gynae-pink);font-weight:700}
+
+/* BUTTONS */
+.section-book-btn{
+  margin-top:auto;
+  padding:.8rem;
+  border:none;
+  border-radius:10px;
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.ortho-btn{background:var(--ortho-blue)}
+.gynae-btn{background:var(--gynae-pink)}
+
+/* LOCATION */
+.location-section{text-align:center;margin:3rem auto}
+.map-container{display:flex;justify-content:center}
+.map-container iframe{
+  width:100%;
+  max-width:900px;
+  height:360px;
+  border-radius:14px;
+}
+
+.location-contact{text-align:center;margin-top:1.5rem}
+
+
+
+.translate-float{
+  position:fixed;right:20px;bottom:90px;
+  background:var(--ortho-blue);
+  color:#fff;border:none;
+  padding:.6rem .9rem;
+  border-radius:20px;
+  font-weight:600;cursor:pointer;
+  z-index:700;
+}
+
+/* MODAL */
+.booking-modal{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.45);
+  display:flex;align-items:center;justify-content:center;
+  z-index:1000;
+}
+.booking-modal.hidden{display:none}
+.booking-box{
+  background:#fff;padding:1.6rem;
+  border-radius:14px;width:90%;max-width:360px;
+  text-align:center;
+}
+.booking-option{
+  display:block;margin-bottom:.9rem;
+  padding:.85rem;border-radius:10px;
+  color:#fff;font-weight:700;text-decoration:none;
+}
+.booking-option.call{background:var(--ortho-blue)}
+.booking-option.whatsapp{background:#25D366}
+.close-btn{background:#eee;border:none;padding:.6rem 1rem;border-radius:8px}
+
+@media(max-width:900px){
+  .departments{grid-template-columns:1fr}
+}
