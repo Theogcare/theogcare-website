@@ -30,9 +30,12 @@ Preferred Time:
 Thank you.`;
   }
 
-  document.getElementById("callLink").href = "tel: +919749701817" + phone;
+  
+  document.getElementById("callLink").href = "tel:+" + phone;
+
+ 
   document.getElementById("whatsappLink").href =
-    "https://wa.me/message/XUQDK2BJXAP3O1?src=qr" + phone + "?text=" + encodeURIComponent(msg);
+    "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
 
   document.getElementById("bookingModal").classList.remove("hidden");
 }
@@ -56,3 +59,4 @@ function translateToBengali(){
     select.dispatchEvent(new Event('change'));
   }
 }
+
